@@ -1,0 +1,43 @@
+{
+  "name": "com.peerio.cordova.plugin.clipboard",
+  "version": "0.1.0",
+  "description": "Cordova Camera Plugin",
+  "cordova": {
+    "id": "com.peerio.cordova.plugin.clipboard",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PeerioTechnologies/peerio-cordova-clipboard"
+  },
+  "keywords": [
+    "cordova",
+    "peerio",
+    "clipboard",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-browser",
+    "cordova-windows"
+  ],
+  "peerDependencies": {
+    "com.peerio.cordova.plugin.file": ">=2.0.0"
+  },
+  "contributors": [
+      {
+          "name": "Samvel Avanesov",
+          "email": "seavan@gmail.com"
+      }
+  ],
+  "license": "Apache-2.0"
+}
