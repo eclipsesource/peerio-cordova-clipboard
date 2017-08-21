@@ -12,6 +12,8 @@ import android.content.ClipboardManager;
 import android.content.ClipData;
 import android.content.ClipDescription;
 
+import android.os.Looper;
+
 public class Clipboard extends CordovaPlugin {
 
     private static final String actionCopy = "copy";
@@ -19,6 +21,10 @@ public class Clipboard extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        if (Looper.myLooper() == null) {
+            Looper.prepare();
+        }
+
         ClipboardManager clipboard = (ClipboardManager) cordova.getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
 
         if (action.equals(actionCopy)) {
